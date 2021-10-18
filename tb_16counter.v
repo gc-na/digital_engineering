@@ -1,9 +1,9 @@
-module tb_mod15cnt ();
+module tb_mod16cnt ();
 reg clk=1'b0;
 reg nclr=1'b0;
 wire [3:0] q;
 
-  mod15cnt aaa(clk, nclr, q);
+  mod16cnt aaa(clk, nclr, q);
 always #5 clk = ~clk;
 initial begin
 $dumpfile("dump.vcd");
